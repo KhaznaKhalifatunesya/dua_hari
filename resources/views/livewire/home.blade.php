@@ -15,10 +15,10 @@
               </nav>
             <div class="collapse navbar-collapse me-md-0 me-sm-4" id="navbar">
                 <div class="ms-md-auto pe-md-3 d-flex align-items-center">
-    
+
                 </div>
                 <ul class="navbar-nav  justify-content-end">
-    
+
                     <li class="nav-item d-flex align-items-center">
                         @if (auth()->user())
                         @if (auth()->user()->role == 'Pimpinan')
@@ -43,12 +43,12 @@
             </div>
         </div>
     </nav>
-    
+
     <div class="row mt-3">
         <div class="col table-responsive">
             <div class="card my-4">
                 <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
-                    <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
+                    <div class="shadow-primary border-radius-lg pt-4 pb-3" style="background-color: #768ce3">
                         <div class="row">
                             <div class="col">
                                 <h6 class="text-white text-capitalize ps-3">Daftar Laundry</h6>
@@ -56,9 +56,9 @@
                             <div class="col">
                                 <div class="ms-md-auto pe-md-3 d-flex align-items-center">
                                     <div wire:ignore class="input-group input-group-outline text-white">
-                                        <label class="form-label text-white">Cari Berdasarkan Kode</label>
+                                        {{-- <label class="form-label text-white">Cari Berdasarkan Kode</label> --}}
                                         <input type="text" class="form-control text-white" wire:model='searchorder'
-                                        wire:input='resetPageOrder'>
+                                        wire:input='resetPageOrder' placeholder="Cari Berdasarkan Kode">
                                     </div>
                                 </div>
                             </div>

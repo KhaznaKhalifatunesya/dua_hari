@@ -23,7 +23,7 @@ Route::get('/', function () {
 })->name('home_user');
 
 Auth::routes([
-    'register' => false,
+    'register' => true,
     'reset' => false,
     'verify' => false,
 ]);

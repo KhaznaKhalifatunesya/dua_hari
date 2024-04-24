@@ -56,11 +56,11 @@
                                     <td>
                                         <a href="javascript:void(0)" class="text-warning"
                                             wire:click.prevent='edit({{ $konsumen->id }})'><i
-                                                class="fa fa-pencil"></i></a>
+                                                class="fa fa-pencil mx-1"></i></a>
 
                                         <a href="javascript:void(0)" class="text-danger"
                                             wire:click.prevent='destroy({{ $konsumen->id }})'><i
-                                                class="fa fa-trash"></i></a>
+                                                class="fa fa-trash mx-1"></i></a>
                                     </td>
                                 </tr>
                             @empty

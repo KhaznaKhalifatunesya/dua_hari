@@ -1,53 +1,55 @@
-<aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3   bg-gradient-dark" id="sidenav-main">
-    <div class="sidenav-header">
-      <i class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
-      <a class="navbar-brand m-0" href=" https://demos.creative-tim.com/material-dashboard/pages/dashboard " target="_blank">
-        <img src="../assets/img/logo-ct.png" class="navbar-brand-img h-100" alt="main_logo">
-        <span class="ms-1 font-weight-bold text-white">Material Dashboard 2</span>
-      </a>
+<aside class="left-sidebar">
+    <!-- Sidebar scroll-->
+    <div>
+      <div class="brand-logo d-flex align-items-center justify-content-between">
+        <a href="./index.html" class="text-nowrap logo-img">
+          <img src="../assets/images/logos/dark-logo.svg" width="180" alt="" />
+        </a>
+        <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+          <i class="ti ti-x fs-8"></i>
+        </div>
+      </div>
+      <!-- Sidebar navigation-->
+      <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
+        <ul id="sidebarnav">
+            @if (auth()->user()->role == 'Admin'||auth()->user()->role == 'Petugas')
+          <li class="sidebar-item">
+            <a class="sidebar-link" {{ request()->is('transaksi') ? 'active bg-gradient-primary' : '' }} " href="{{route('transaksi')}}">
+              <span>
+                <i class="ti ti-layout-dashboard"></i>
+              </span>
+              <span class="hide-menu">Transaksi</span>
+            </a>
+          </li>
+          @endif
+          <li class="sidebar-item">
+            <a class="sidebar-link" {{ request()->is('konsumen') ? 'active bg-gradient-primary' : '' }}" href="{{route('konsumen')}}">
+              <span>
+                <i class="ti ti-article"></i>
+              </span>
+              <span class="hide-menu">Daftar Konsumen</span>
+            </a>
+          </li>
+          @if (auth()->user()->role == 'Admin')
+          <li class="sidebar-item">
+            <a class="sidebar-link" {{ request()->is('layanan') ? 'active bg-gradient-primary' : '' }}" href="{{route('layanan')}}">
+              <span>
+                <i class="ti ti-alert-circle"></i>
+              </span>
+              <span class="hide-menu">Layanan</span>
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a class="sidebar-link" {{ request()->is('pengguna') ? 'active bg-gradient-primary' : '' }}" href="{{route('pengguna')}}">
+              <span>
+                <i class="ti ti-cards"></i>
+              </span>
+              <span class="hide-menu">Daftar Pengguna</span>
+            </a>
+          </li>
+          @endif
+      </nav>
+      <!-- End Sidebar navigation -->
     </div>
-    <hr class="horizontal light mt-0 mb-2">
-    <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
-      <ul class="navbar-nav">
-        @if (auth()->user()->role == 'Admin'||auth()->user()->role == 'Petugas')
-          
-        <li class="nav-item">
-          <a class="nav-link text-white {{ request()->is('transaksi') ? 'active bg-gradient-primary' : '' }} " href="{{route('transaksi')}}">
-            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="material-icons opacity-10">dashboard</i>
-            </div>
-            <span class="nav-link-text ms-1">Transaksi</span>
-          </a>
-        </li>
-        @endif
-        <li class="nav-item">
-          <a class="nav-link text-white {{ request()->is('konsumen') ? 'active bg-gradient-primary' : '' }}" href="{{route('konsumen')}}">
-            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="material-icons opacity-10">receipt_long</i>
-            </div>
-            <span class="nav-link-text ms-1">Daftar Konsumen</span>
-          </a>
-        </li>
-        @if (auth()->user()->role == 'Admin')
-        <li class="nav-item">
-          <a class="nav-link text-white {{ request()->is('layanan') ? 'active bg-gradient-primary' : '' }}" href="{{route('layanan')}}">
-            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="material-icons opacity-10">view_in_ar</i>
-            </div>
-            <span class="nav-link-text ms-1">Layanan</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-white {{ request()->is('pengguna') ? 'active bg-gradient-primary' : '' }}" href="{{route('pengguna')}}">
-            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="material-icons opacity-10">person</i>
-            </div>
-            <span class="nav-link-text ms-1">Daftar Pengguna</span>
-          </a>
-        </li>
-        @endif
-        
-      </ul>
-    </div>
-    
+    <!-- End Sidebar scroll-->
   </aside>
