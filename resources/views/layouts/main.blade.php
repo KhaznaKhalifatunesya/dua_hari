@@ -47,7 +47,7 @@
     <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
     data-sidebar-position="fixed" data-header-position="fixed">
     <x-sidebar />
-    <div class="body-wrapper" style="background-color: #768ce3">
+    <div class="body-wrapper" style="background-color: #509fb5">
 
 
     <!-- Navbar -->

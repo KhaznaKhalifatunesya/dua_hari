@@ -48,7 +48,7 @@
         <div class="col table-responsive">
             <div class="card my-4">
                 <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
-                    <div class="shadow-primary border-radius-lg pt-4 pb-3" style="background-color: #768ce3">
+                    <div class="shadow-primary border-radius-lg pt-4 pb-3" style="background-color: #509fb5">
                         <div class="row">
                             <div class="col">
                                 <h6 class="text-white text-capitalize ps-3">Daftar Laundry</h6>

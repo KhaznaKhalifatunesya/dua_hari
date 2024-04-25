@@ -9,7 +9,7 @@
           <div class="col-lg-4 col-md-8 col-12 mx-auto">
             <div class="card z-index-0 fadeIn3 fadeInBottom">
               <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
-                <div class="shadow-primary border-radius-lg py-3 pe-1" style="background-color: #768ce3">
+                <div class="shadow-primary border-radius-lg py-3 pe-1" style="background-color: #509fb5">
                   <h4 class="text-white font-weight-bolder text-center mt-2 mb-0">Sign in</h4>
                   {{-- <div class="row mt-3">
                     <div class="col-2 text-center ms-auto">
@@ -39,10 +39,10 @@
                   </div>
                   <div class="input-group input-group-outline mb-3">
                     {{-- <label class="form-label">Password</label> --}}
-                    <input type="password" class="form-control" placeholder="Email" name="password" required autocomplete="current-password">
+                    <input type="password" class="form-control" placeholder="Password" name="password" required autocomplete="current-password">
                   </div>
                   <div class="text-center">
-                    <button type="submit" class="btn w-100 my-4 mb-2 text-white" style="background-color: #768ce3">Sign in</button>
+                    <button type="submit" class="btn w-100 my-4 mb-2 text-white" style="background-color: #509fb5">Sign in</button>
                   </div>
                 </form>
               </div>
