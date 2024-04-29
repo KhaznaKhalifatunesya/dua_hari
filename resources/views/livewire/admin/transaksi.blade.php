@@ -32,7 +32,7 @@
                         aria-current="page" href="javascript:void(0)" wire:click='listoff'>
                         <h4>
                             @if ($updatemode)
-                                Edit Orderan
+                                Edit Orderann
                             @else
                                 Orderan
                             @endif
