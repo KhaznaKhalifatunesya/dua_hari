@@ -68,7 +68,7 @@
                 </div>
                 <div class="card-body px-0 pb-2">
                     <table class="table table-striped table-hover table-responsive text-center">
-                        <thead>
+                        {{-- <thead>
                             <tr>
                                 <th>Tanggal</th>
                                 <th>Kode</th>
@@ -93,14 +93,38 @@
                                         style="text-transform: uppercase;">
                                         {{ $order->pembayaran->status_pembayaran }}
                                     </td>
-                                </tr>
-                            @empty
-                                <tr>
-                                    <td colspan="7">
-                                        <h5 class="text-center">Belum ada orderan</h5>
-                                    </td>
-                                </tr>
-                            @endforelse
+                                </tr> --}}
+                                <div class="row px-4 py-4">
+                                    @forelse ($orders as $order)
+                                    <div class="col-lg-3">
+                                        <div class="card">
+                                            <div class="card-header d-flex justify-content-between align-items-center">
+                                            <span class="text-muted">{{ $order->updated_at->format('d-m-y') }}</span>
+                                            <span class="text-muted">{{ $order->kode_laundry }}</span>
+                                            </div>
+                                            <div class="card-body">
+                                            <h5 class="card-title">{{ $order->layanan->nama_layanan }}</h5>
+                                            <p class="card-text">Deskripsi jenis barang...</p>
+                                            </div>
+                                            <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">{{ 'Rp' . number_format($order->total_harga, 0, ',', '.') }}</li>
+                                            </ul>
+                                            <div class="card-footer d-flex justify-content-between align-items-center">
+                                            <span class="badge @if ($order->status == 'baru') bg-danger @elseif($order->status == 'proses') bg-warning @else bg-success @endif text-white border"
+                                                style="text-transform: uppercase;">{{ $order->status }}</span>
+                                            <span class="badge @if ($order->pembayaran->status_pembayaran == 'lunas') bg-success @else bg-danger @endif text-white"
+                                                style="text-transform: uppercase;">{{ $order->pembayaran->status_pembayaran }}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @empty
+                                        <tr>
+                                            <td colspan="7">
+                                                <h5 class="text-center">Belum ada orderan</h5>
+                                            </td>
+                                        </tr>
+                                    @endforelse
+                                </div>
                         </tbody>
                     </table>
                 </div>

@@ -46,7 +46,7 @@
                         href="javascript:void(0)" wire:click='liston' wire:click.prevent='cancel'>
                         <h4>Daftar Orderan @if ($orders->where('status', 'baru')->count() > 0)
                                 <span
-                                    class="badge rounded-circle text-bg-danger">{{ $orders->where('status', 'baru')->count() }}</span>
+                                    class="badge rounded-circle text-bg-blue">{{ $orders->where('status', 'baru')->count() }}</span>
                             @endif
                         </h4>
                     </a>
