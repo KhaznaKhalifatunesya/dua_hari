@@ -92,9 +92,9 @@
                         @else
                             <h4 class="modal-title" id="myModalLabel">Tambahkan Akun</h4>
                         @endif
-                        <button type="button" class="close" data-bs-dismiss="modal"
+                        {{-- <button type="button" class="close" data-bs-dismiss="modal"
                             wire:click.prevent='cancel()'><span>&times;</span>
-                        </button>
+                        </button> --}}
                     </div>
                     <div class="modal-body">
                         <div class="form-group">

@@ -4,11 +4,11 @@
             <nav aria-label="breadcrumb">
                 <div class="row">
                     <div class="col">
-                <img src="https://image.shutterstock.com/image-vector/dotted-spiral-vortex-royaltyfree-images-600w-2227567913.jpg" width="36" alt="">
+                <img src="../assets/images/logos/favicon.png" width="95" alt="">
 
                     </div>
                     <div class="col">
-                <h6 class="font-weight-bolder mb-0">Dashboard</h6>
+                    <h4 class="font-weight-bolder my-2">History Dashboard</h4>
 
                     </div>
                 </div>

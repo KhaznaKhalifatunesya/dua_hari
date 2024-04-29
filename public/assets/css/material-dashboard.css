@@ -8097,6 +8097,11 @@ fieldset:disabled .btn {
   background-color: RGBA(26, 115, 232, var(--bs-bg-opacity, 1)) !important;
 }
 
+.text-bg-blue {
+    color: #000 !important;
+    background-color: RGBA(21, 121, 136, var(--bs-bg-opacity, 1)) !important;
+  }
+
 .text-bg-warning {
   color: #000 !important;
   background-color: RGBA(251, 140, 0, var(--bs-bg-opacity, 1)) !important;
@@ -10949,7 +10954,7 @@ fieldset:disabled .btn {
 }
 
 .shadow-primary {
-  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(233, 30, 99, 0.4) !important;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(18, 121, 136, 0.4) !important;
 }
 
 .shadow-secondary {

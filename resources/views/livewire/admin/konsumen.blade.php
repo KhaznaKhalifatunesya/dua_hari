@@ -3,7 +3,7 @@
         <div class="col">
             <div class="row justify-content-between">
                 <div class="col-auto">
-                    <div class="input-group mb-3">
+                    <div class="input-group input-group-outline mb-3">
                         <span class="input-group-text" id="basic-addon1"></span>
                         <input type="text" class="form-control" placeholder="Cari Konsumen" aria-label="Cari konsumen"
                             aria-describedby="basic-addon1" wire:model='searchkonsumen' wire:input='resetKonsumenPage'>

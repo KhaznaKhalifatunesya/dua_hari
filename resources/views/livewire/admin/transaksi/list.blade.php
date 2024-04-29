@@ -1,7 +1,7 @@
 <div class="row justify-content-center">
     <div class="col-auto">
         <div class="card">
-            <div class="card-body text-center text-white text-bg-warning">
+            <div class="card-body text-center text-white text-bg-blue">
                 <h3><i class="fa-solid fa-user-clock"></i> <br></h3>
                 <h6>Laundryan Dalam Proses : <br>{{ $statusProsesCount }}</h6>
             </div>
@@ -9,7 +9,7 @@
     </div>
     <div class="col-auto">
         <div class="card">
-            <div class="card-body text-center text-white text-bg-info">
+            <div class="card-body text-center text-white text-bg-blue">
                 <h3><i class="fa-solid fa-user-check"></i> <br></h3>
                 <h6>Laundryan Belum Diambil : <br>{{ $statusBelumDiambilCount }}</h6>
             </div>
