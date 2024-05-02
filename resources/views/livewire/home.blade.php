@@ -4,13 +4,13 @@
             <nav aria-label="breadcrumb">
                 <div class="row">
                     <div class="col">
-                <img src="../assets/images/logos/favicon.png" width="95" alt="">
+                <img src="../assets/images/logos/dark-logo.png" width="190" alt="">
 
                     </div>
-                    <div class="col">
+                    <!-- <div class="col">
                     <h4 class="font-weight-bolder my-2">History Dashboard</h4>
 
-                    </div>
+                    </div> -->
                 </div>
               </nav>
             <div class="collapse navbar-collapse me-md-0 me-sm-4" id="navbar">
@@ -51,7 +51,7 @@
                     <div class="shadow-primary border-radius-lg pt-4 pb-3" style="background-color: #509fb5">
                         <div class="row">
                             <div class="col">
-                                <h6 class="text-white text-capitalize ps-3">Daftar Laundry</h6>
+                                <h6 class="text-white text-capitalize ps-3">Daftar Histori Laundry</h6>
                             </div>
                             <div class="col">
                                 <div class="ms-md-auto pe-md-3 d-flex align-items-center">

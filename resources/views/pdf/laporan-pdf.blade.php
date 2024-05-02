@@ -11,7 +11,8 @@
 </head>
 
 <body>
-    <h1 style="text-align: center">Laporan Orderan Laundry</h1>
+    <img src="../assets/images/logos/dark-logo.png" width="180px">
+    <h1 style="text-align: center">Laporan Orderan LaundNa</h1>
 
     {{-- <h4>Laopran Orderan Dari :</h4> --}}
     <table border="2">

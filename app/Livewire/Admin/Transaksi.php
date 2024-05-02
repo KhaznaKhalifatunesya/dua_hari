@@ -185,11 +185,17 @@ class Transaksi extends Component
         $this->listmode = true;
     }
     public function destroy($id)
-    {
-        $order = OrderTbl::find($id);
+{
+    $order = OrderTbl::find($id);
+
+    if ($order) {
         $order->delete();
         session()->flash('message', 'Orderan berhasil dihapus.');
+    } else {
+        session()->flash('error', 'Orderan tidak ditemukan.');
     }
+}
+
     public function show($id)
     {
         $this->detailon = true;

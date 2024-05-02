@@ -8,7 +8,7 @@
             </div>
             <div class="row text-center pb-5 fs-5">
                 <div class="col">
-                    <div class="form-input">
+                    <div class="input-group input-group-outline mb-3">
                         <input type="text" class="form-control border @error('nama') is-invalid @enderror"
                             wire:input="searchResult" wire:model="nama" placeholder="Nama">
                         @if ($showresult)
@@ -33,7 +33,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="form-input">
+                    <div class="input-group input-group-outline mb-3">
                         <input type="text" class="form-control border @error('no_telp') is-invalid @enderror"
                             wire:model="no_telp" placeholder="Nomor Hp" required>
                         @error('no_telp')
@@ -59,7 +59,7 @@
                 </div>
                 <div class="col">
                     <div class="mb-3">
-                        <label class="form-label"><strong> Pilih Jenis Layanan </strong></label>
+                        <label class="form-label"><strong> Jenis Layanan </strong></label>
                         <select class="form-select @error('id_layanan') is-invalid @enderror" wire:model="id_layanan"
                             wire:change='calculateTotalHarga()' required>
                             <option value="">Pilih Jenis Layanan</option>

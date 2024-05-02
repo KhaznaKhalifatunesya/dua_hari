@@ -18,7 +18,7 @@
 </div>
 <div class="row mt-3">
     <div class="col" style="margin-left: auto;">
-        <div class="input-group mb-4">
+        <div class="input-group input-group-outline mb-3">
             <span class="input-group-text" id="basic-addon1"></span>
             <input type="text" class="form-control border" placeholder="Cari Laundryan" aria-label="Cari Berdasarkan Kode"
                 aria-describedby="basic-addon1" wire:model='searchorder' wire:input='resetPageOrder'>
