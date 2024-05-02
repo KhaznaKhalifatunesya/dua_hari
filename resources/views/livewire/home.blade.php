@@ -104,10 +104,9 @@
                                             </div>
                                             <div class="card-body">
                                             <h5 class="card-title">{{ $order->layanan->nama_layanan }}</h5>
-                                            <p class="card-text">Deskripsi jenis barang...</p>
                                             </div>
                                             <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">{{ 'Rp' . number_format($order->total_harga, 0, ',', '.') }}</li>
+                                                <li class="list-group-item"><b>Total harga:</b> {{ 'Rp' . number_format($order->total_harga, 0, ',', '.') }}</li>
                                             </ul>
                                             <div class="card-footer d-flex justify-content-between align-items-center">
                                             <span class="badge @if ($order->status == 'baru') bg-danger @elseif($order->status == 'proses') bg-warning @else bg-success @endif text-white border"
