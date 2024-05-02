@@ -1,0 +1,111 @@
+@extends('layouts.app')
+
+@section('content')
+<section class="h-100 gradient-form">
+    <div class="container py-5 h-100 d-flex justify-content-center align-items-center">
+      <div class="col-lg-6">
+        <div class="card rounded-3 text-black">
+          <div class="card-body p-md-5 mx-md-4">
+            <div class="text-center">
+                <img src="../assets/images/logos/dark-logo.png" style="width: 185px;" alt="logo">
+                <h4 class="mt-1 mb-5 pb-1">Selamat datang!</h4>
+            </div>
+                <form role="form" class="text-start" method="POST" action="{{ route('login') }}">
+                 @csrf
+                <p>Sebelumnya, login dulu yuk!</p>
+                <div data-mdb-input-init class="form-outline mb-4">
+                    <input type="email" class="form-control" placeholder="Masukkan email" name="Email" value="{{ old('email') }}" required autocomplete="email" autofocus/>
+                      <!-- <label class="form-label">Email</label> -->
+                </div>
+                <div data-mdb-input-init class="form-outline mb-4">
+                    <input type="password" class="form-control" placeholder="Password" name="password" required autocomplete="current-password"/>
+                      <!-- <label class="form-label" for="form2Example22">Password</label> -->
+                </div>
+                <div class="text-center pt-1 mb-5 pb-1">
+                    <button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">Log in</button>
+                </div>
+                </form>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+@endsection
+
+<!-- idunno WHAT TODO -->
+
+@extends('layouts.app')
+
+@section('content')
+<main class="main-content  mt-0">
+    <div class="page-header align-items-start min-vh-100" style="background-image: url('https://images.unsplash.com/photo-1497294815431-9365093b7331?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1950&q=80');">
+      <span class="mask bg-gradient-dark opacity-6"></span>
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-4 col-md-8 col-12 mx-auto">
+            <div class="card z-index-0 fadeIn3 fadeInBottom">
+              <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
+                <div class="shadow-primary border-radius-lg py-3 pe-1" style="background-color: #509fb5">
+                  <h4 class="text-white font-weight-bolder text-center mt-2 mb-0">Sign in</h4>
+                  {{-- <div class="row mt-3">
+                    <div class="col-2 text-center ms-auto">
+                      <a class="btn btn-link px-3" href="javascript:;">
+                        <i class="fa fa-facebook text-white text-lg"></i>
+                      </a>
+                    </div>
+                    <div class="col-2 text-center px-1">
+                      <a class="btn btn-link px-3" href="javascript:;">
+                        <i class="fa fa-github text-white text-lg"></i>
+                      </a>
+                    </div>
+                    <div class="col-2 text-center me-auto">
+                      <a class="btn btn-link px-3" href="javascript:;">
+                        <i class="fa fa-google text-white text-lg"></i>
+                      </a>
+                    </div>
+                  </div> --}}
+                </div>
+              </div>
+              <div class="card-body">
+                <form role="form" class="text-start" method="POST" action="{{ route('login') }}">
+                    @csrf
+                  <div class="input-group input-group-outline my-3">
+                    {{-- <label class="form-label">Email</label> --}}
+                    <input type="email" class="form-control" name="email" placeholder="Email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                  </div>
+                  <div class="input-group input-group-outline mb-3">
+                    {{-- <label class="form-label">Password</label> --}}
+                    <input type="password" class="form-control" placeholder="Password" name="password" required autocomplete="current-password">
+                  </div>
+                  <div class="text-center">
+                    <button type="submit" class="btn w-100 my-4 mb-2 text-white" style="background-color: #509fb5">Sign in</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer position-absolute bottom-2 py-2 w-100">
+        <div class="container">
+          <div class="row align-items-center justify-content-lg-between">
+            <div class="col-12 col-md-6 my-auto">
+              <div class="copyright text-center text-sm text-white text-lg-start">
+                © <script>
+                  document.write(new Date().getFullYear())
+                </script>,
+                made with <i class="fa fa-heart" aria-hidden="true"></i> by
+                <a href="https://www.creative-tim.com" class="font-weight-bold text-white" target="_blank">Khazna</a>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </footer>
+    </div>
+  </main>
+@endsection
+
